@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FUT24HORAS</title>
+    <style>
+        body {
+            background-image: url(certopri.png);
+            background-color: rgb(43, 85, 1);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 150px;
+        }
+        .button:hover {
+            background-color: #4f5254;
+        }
+    
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(167, 217, 190, 0.8);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000; 
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="menu">
+        <a href="principal.html">INÍCIO</a>
+        <a href="pagform.html">LOGIN</a>
+        <a href="cadastro.html">CADASTRO</a>
+    </div>
+
+    <button class="button" onclick="window.location.href='pagform.html'">CLIQUE AQUI</button>
+</body>
+</html>

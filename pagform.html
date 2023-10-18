@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+    <style>
+        body {
+            background-image: url(certoform.png); 
+            background-color: rgb(43, 85, 1);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000; 
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .form-container {
+            background-color: rgba(167, 217, 190, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-input {
+            width: 250px; 
+            height: 25px;
+            font-size: 16px;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 8px 16px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            margin-top: 20px; 
+        }
+
+        .signup-button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="principal.html">INÍCIO</a>
+        <a href="pagform.html">LOGIN</a>
+        <a href="cadastro.html">CADASTRO</a>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="form-input" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" class="form-input" required><br><br>
+
+            <input type="submit" value="Enviar" class="form-button">
+            <button class="form-button" onclick="window.location.href='principal.html'">Voltar</button>
+        </form>
+    </div>
+
+    <div class="button-container">
+        <button class="signup-button" onclick="window.location.href='cadastro.html'">Se você ainda não é cadastrado, clique aqui</button>
+    </div>
+</body>
+</html>
